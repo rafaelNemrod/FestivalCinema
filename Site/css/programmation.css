@@ -1,0 +1,426 @@
+  *{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+/*------------------------------------------------------
+    Tous les titres H1
+--------------------------------------------------------*/
+h1{
+  font-family: 'Zilla Slab', serif;
+  margin-top: 0;
+  font-size: 22px;
+}
+
+
+/*------------------------------------------------------
+    Tous les titres H2
+--------------------------------------------------------*/
+h2{
+  font-family: 'Zilla Slab', serif;
+  font-size: 5vh;
+  margin-top: 20vh;
+  color: #1c0424;
+}
+
+/*------------------------------------------------------
+    Tous les titres H4
+--------------------------------------------------------*/
+h4{
+  font-family: 'Zilla Slab', serif;
+  margin-bottom: 10%;
+}
+
+
+
+ /* Fonction responsive Test des différents format d'écran   
+@media screen and (max-width: 767.98px){
+  body{
+    background-color: red;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  body{
+    background-color: green;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body{
+    background-color: blue;
+  }
+}
+*/
+
+
+
+
+/*------------------------------------------------------
+    Section MENU DE NAVIGATION
+--------------------------------------------------------*/
+nav{
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  height: 15vh;
+  background-color: #56c6f0;
+  box-shadow: 0px 4px 5px  #080c0a;
+  font-size: 1vw;
+}
+ul{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  height: 15vh;  
+  position: relative;
+}
+li a {
+  color: #080c0a;
+  text-align: center;
+  padding: 1vw 1vw;
+  text-decoration: none;
+}
+a:hover:not(.active) {
+  color: #f9efd9;
+}
+.active {
+  color:#f9efd9;
+  } 
+.logoFestival{
+  width: 7vw;
+}
+
+/* Fonction responsive du menu de navigation */
+@media screen and (max-width: 767px){
+  nav{
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  li{
+    text-align: center;
+  }
+}
+
+/*------------------------------------------------------
+    Section MENU DE TELEPHONE
+--------------------------------------------------------*/
+.logoTel{
+  display: flex;
+  justify-content: center;
+}
+.logoTelFestival{
+  width: 100px;
+}
+.topnav {
+  width: 100%;
+  overflow: hidden;
+  background-color: #72d3fa;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color:black;
+  font-size: 12px;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  color:#f9efd9;
+}
+
+.topnav a.active {
+  color:#f9efd9;
+  text-decoration: underline;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 768px) {
+.logoTel{
+  display: none;
+}
+  #myTopnav{
+    display: none;
+  }
+}
+
+
+ 
+/*------------------------------------------------------
+    Section HERO LIGHT
+--------------------------------------------------------*/
+header{
+  background-image: url("../ressources/programmation.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed; 
+  height: 30vh;
+}
+.jour{
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  header{
+    height: 100px;
+    background-attachment: scroll; 
+    background-position: center;
+    background-size: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+ 
+}
+
+@media screen and (min-width: 1024px) {
+ 
+}
+
+/*------------------------------------------------------
+    Section PROGRAMMATION
+--------------------------------------------------------*/
+.jour1, .jour2, .jour3, .jour4{
+  margin-top: 20vh;
+}
+.film1J1, .film2J1, .film1J2, .film2J2, .film1J3, .film2J3, .film1J4, .film2J4{
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #f9efd9;
+}
+.film1J1{
+  background-image: url("../ressources/film1.jpg");
+}
+.film2J1{
+  background-image: url("../ressources/film2.jpg");
+  background-position: center;
+}
+.film1J2{
+  background-image: url("../ressources/film3.jpg");
+  background-position: center;
+}
+.film2J2{
+  background-image: url("../ressources/film4.jpg");
+}
+.film1J3{
+  background-image: url("../ressources/film5.jpg");
+}
+.film2J3{
+  background-image: url("../ressources/film6.jpg");
+}
+.film1J4{
+  background-image: url("../ressources/film7.jpg");
+}
+.film2J4{
+  background-image: url("../ressources/film8.jpg");
+}
+.film1{
+  box-shadow: 5px 4px 5px  #f9efd9;
+}
+.textFilm{
+  background-color: #1c0424;
+  padding: 5px;
+  border-radius: 4px;
+}
+.titreFilm{
+  font-size: 5vh;
+  font-weight: 600;
+}
+.descriFilm{
+  width: 80vw;
+  margin: auto;
+  margin-top: 10vh;
+}
+.distriFilm{
+  color: #58A859;
+  font-size: 2vh;
+  margin-bottom: 2%;
+}
+.casting{
+  width: 80vw;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 10vh;
+}
+.name{
+  color: #1c0424;
+}
+.btn{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 80vw;
+ margin-bottom: 10vh;
+}
+.btnBA{
+  color: #f9efd9;
+  text-decoration: none;
+  background-color: #56c6f0;
+  margin-left: 10vw;
+  width: 15%;
+  text-align: center;
+  margin-top: 1vh;
+  padding: 1vh;
+}
+.btnBA:hover{
+  background-color: #1c0424;
+}
+
+@media screen and (max-width: 767px) {
+  h2{
+    margin-top: 50px;
+    text-align: center;
+  }
+  .jour1, .jour2, .jour3, .jour4{
+    margin-top: 50px;
+  }
+  .film1J1, .film2J1, .film1J2, .film2J2, .film1J3, .film2J3, .film1J4, .film2J4{
+    height: 200px;
+  }
+  .film1J1{
+    background-size: cover;
+  }
+  .film1{
+    width: 50px;
+  }
+  .textFilm{
+    width: 60vw;
+  }
+  .titreFilm{
+    font-size: 18px;
+  }
+  .infosFilm{
+    font-size: 12px;
+  }
+  .descriFilm, .casting{
+    font-size: 14px;
+  }
+  .btn{
+    margin: auto;
+    flex-direction: column;
+  }
+  .btnBA{
+    margin: 0;
+  }
+  .ticket{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .reserTicket{
+    width: 75px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+ 
+}
+
+@media screen and (min-width: 1024px) {
+ 
+}
+
+
+/*------------------------------------------------------
+    Section FOOTER
+--------------------------------------------------------*/
+.footer{
+  background-color: #3c7c53;
+  font-size: 14px;
+  line-height: 130%;
+  color: black;
+  overflow: hidden;
+}
+.texteFooter{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10vh;
+  margin-top: 3%;
+}
+.styletext{
+  text-decoration: none;
+  color: black;
+  margin-bottom: 10%;
+}
+.styletext:visited{
+  color: black;
+}
+.contact{
+  display: flex;
+  flex-direction: column;
+}
+.tel{
+  display: flex;
+  align-items: center;
+}
+.marge{
+  margin-bottom: 10%;
+}
+.tw{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.yt{
+  margin-left: 5px;
+}
+
+
+/* Fonction responsive du footer */
+@media screen and (max-width: 767px){
+  .footer{
+    font-size: 12px;
+  }
+  .texteFooter{
+    flex-direction: column;
+    margin-left: 5vw;
+  }
+  h4{
+    font-size: 16px;
+  }
+  .contact{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+ 
+}
+
+@media screen and (min-width: 1024px) {
+ 
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<!-- Lien vers le CSS -->
+    <link rel="stylesheet" href="css/contact.css">
+<!-- Lien vers le CSS du logo menu de téléphone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Faveicon -->
+    <link rel="shortcut icon" href="ressources/faveicon.ico" type="image/x-icon" /> 
+<!-- Lien vers google font -->        
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600&display=swap" rel="stylesheet"> 
+<!-- Titre -->
+    <title>Contact - Les films de plein air</title>   
+  </head>
+  
+  <body>
+
+
+<!--------------------------------------------------------
+	Section MENU DE NAVIGATION
+---------------------------------------------------------->
+    <nav id="accueil">
+      <ul> 
+          <li><a class="" href="index.html">Accueil</a></li>
+          <li><a class="" href="programmation.html">Programmation</a></li>
+          <li><a class="" href="reservation.html">Réservation</a></li>
+          <li><a class="" href="index.html"><img class="logoFestival" src="ressources/LogoLesFilmsEnPleinAir_small.png" alt="Logo Festival"></a></li>
+          <li><a class="" href="infosPratiques.html">Infos pratiques</a></li>
+          <li><a class="" href="actualites.html">Actualités</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li> 
+      </ul>
+    </nav>
+
+
+<!--------------------------------------------------------
+	Section MENU DE TELEPHONE
+---------------------------------------------------------->
+    <div class="logoTel">
+        <a class="" href="index.html"><img class="logoTelFestival" src="ressources/LogoLesFilmsEnPleinAir_small.png" alt="Logo Festival"></a>
+    </div>
+
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Accueil</a>
+      <a href="programmation.html">Programmation</a>
+      <a href="reservation.html">Réservation</a>
+      <a href="infosPratiques.html">Infos Pratiques</a>
+      <a href="actualites.html">Actualités</a>
+      <a href="contact.html">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="navTel()">
+      <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+
+
+
+<!--------------------------------------------------------
+	Section HERO LIGHT
+---------------------------------------------------------->          
+         
+    <header>
+      <div class="heroContact">  
+      </div> 
+    </header>
+
+<!--------------------------------------------------------
+	Section CONTACT
+---------------------------------------------------------->
+    <h1>Comment nous contacter?</h1>
+        <div class="texteIntro">
+            <p>Une question avant de réserver ou vous voulez devenir bénévole pour l'association "Les Films de Plein Air"?</p>
+            <p>Voici les différents moyens de nous contacter!</p>
+        </div>
+
+        
+        <div class="infosAdd">
+            <p><img class="icone" src="ressources/address.png" alt="icone Addresse"></p>
+            <p>Notre siège social se situe au 17 Place de la république à Paris 03</p>
+        </div>
+        <div class="maps">
+            <iframe class="goMaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.513497864379!2d2.360315115881992!3d48.86748680801977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e08cc785d1b%3A0x595ff0728b355121!2s17%20Place%20de%20la%20R%C3%A9publique%2C%2075003%20Paris!5e0!3m2!1sfr!2sfr!4v1595409798350!5m2!1sfr!2sfr" frameborder="0" style="border:0;" allowfullscreen="true"></iframe>
+        </div>
+
+        <div class="contactInfo">
+            <div class="telEmail">
+                <div class="infos">
+                    <p><img class="icone" src="ressources/phone.png" alt="icone Téléphone"></p>
+                    <p>Notre numéro de téléphone est le 06 06 06 06 06</p>
+                </div>
+                <div class="infos">
+                    <p><img class="icone" src="ressources/at.png" alt="icone Email"></p>
+                    <p>Notre Email de contact est contact@lfdpa.org</p>
+                </div>
+            </div>
+
+            <div class="reseau">
+                <div class="social">
+                    <div class="listeReseau">
+                        <p><img class="icone" src="ressources/facebookVert.png" alt="icone Fb"></p>
+                        <p>Notre page FaceBook</p>    
+                    </div>
+                    <div class="listeReseau">
+                        <p><img class="icone" src="ressources/twitterVert.png" alt="icone Twitter"></p>
+                        <p>Notre page Twitter</p>    
+                    </div>
+
+                    <div class="listeReseau">
+                        <p><img class="icone" src="ressources/instagramVert.png" alt="icone Insta"></p>
+                        <p>Notre page Instagram</p>    
+                    </div>
+                    <div class="listeReseau">
+                        <p><img class="icone" src="ressources/youtubeVert.png" alt="icone Youtube"></p>
+                        <p>Notre page Youtube</p>    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--------------------------------------------------------
+	Section FORMULAIRE DE CONTACT
+----------------------------------------------------------> 
+        <h2>Envie de nous écrire un p'tit mot?</h2>
+        <form id="formulaireContact" method="post" action="page.php">
+
+            <fieldset>
+                <legend>Vos contacts :</legend>
+                <div class="identite">
+                    <label for="nom">Votre nom*</label>
+                    <input type="text" name="nom" id="nom" placeholder="Ex : Durand" size="30" maxlength="30" required/>  
+                
+                    <label for="prenom">Votre prénom*</label>
+                    <input type="text" name="prenom" id="prenom" placeholder="Ex : Eve" size="20" maxlength="20" required/>
+                </div> 
+                <div class="mail">
+                    <label for="email">Votre email*</label>
+                    <input type="email" name="email" id="email" placeholder="Ex : zen@zen.com" size="20" maxlength="20" required/>
+                </div>
+                <div class="news">
+                    <label for="newsletter">Voulez-vous vous abonner à la newsletter?</label><br>
+                    <input type="checkbox" name="newsletter" checked="checked" id="checkbox" /> oui
+                </div>  
+            </fieldset>
+
+            <fieldset>
+                <legend>Votre question/message :</legend>
+
+                <div class="message">
+                    <textarea name="message" id="message" rows="10" cols="48"></textarea>
+                    <p class="mention">* Champs obligatoire</p>
+                </div>
+                
+                <div class="content">
+                    <input class="btnEnvoyer" type="submit" value="ENVOYER">
+                </div>
+            </fieldset>
+        </form>
+
+
+
+    
+
+<!--------------------------------------------------------
+	Section FOOTER
+----------------------------------------------------------> 
+<hr/>
+    <section class="footer"> 
+        <div class="texteFooter">
+            <div class="navFooter">
+                <h4>Navigation :</h4>
+                <p><a class="styletext" href="#accueil">Accueil</a></p>
+                <p><a class="styletext" href="programmation.html">Programmation</a></p>
+                <p><a class="styletext" href="reservation.html">Réservation</a></p>
+                <p><a class="styletext" href="infosPratiques.html">Infos Pratiques</a></p>
+                <p><a class="styletext" href="actualites.html">Actualités</a></p>
+                <p><a class="styletext" href="contact.html">Contact</a></p>
+            </div>
+            <div class="contact">  
+                <h4>Nous contacter :</h4>
+                <p class ="tel">Association "Les films de plein air"</p>
+                <p class ="tel">17 Place de la République</p> 
+                <p class ="tel marge">75003 Paris</p>     
+            
+                <p class ="tel">  
+                    <span>&#048&#054 &#048&#054 &#048&#054 &#048&#054 &#048&#054</span>
+                </p>
+                <br/>
+                <p class ="tel"> 
+                    <a class="styletext" href="mailto:contact@lfdpa.org" title="Cliquer ici pour m'envoyer un mail!">contact@lfdpa.org</a>
+                </p>
+                <p class ="tel">
+                    <img class="fb" src="ressources/facebook.png" alt="Icone Facebook">
+                    <img class="tw" src="ressources/twitter.png" alt="Icone Tweeter">
+                    <img class="inst" src="ressources/instagram.png" alt="Icone Instagram">
+                    <img class="yt" src="ressources/youtube.png" alt="Icone Youtube">
+                </p>
+            </div>
+            <div class="credits">
+                <h4>Crédits :</h4>
+                <p>Photos : <a class="styletext" href="http://photographe.com" target="_blank">Nom Prénom</a></p>
+                <p>Hébergement : WebRB</p>
+                <p>Réalisation : <a class="styletext" href="mailto:raphael.bertrand@lilo.org" title="Cliquer pour envoyer un email a raphael.bertrand@lilo.org">Raphaël BERTRAND</a></p>
+            </div>
+        </div>    
+    </section>
+
+
+    <script src="js/contact.js"></script>
+
+  </body>
+</html>

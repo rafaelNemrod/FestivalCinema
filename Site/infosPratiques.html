@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<!-- Lien vers le CSS -->
+    <link rel="stylesheet" href="css/infosPratiques.css">
+<!-- Lien vers le CSS du logo menu de téléphone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Faveicon -->
+    <link rel="shortcut icon" href="ressources/faveicon.ico" type="image/x-icon" /> 
+<!-- Lien vers google font -->        
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600&display=swap" rel="stylesheet"> 
+<!-- Titre -->
+    <title>Infos Pratiques - Les films de plein air</title>   
+  </head>
+  
+  <body>
+
+
+<!--------------------------------------------------------
+	Section MENU DE NAVIGATION
+---------------------------------------------------------->
+    <nav id="accueil">
+      <ul> 
+          <li><a class="" href="index.html">Accueil</a></li>
+          <li><a class="" href="programmation.html">Programmation</a></li>
+          <li><a class="" href="reservation.html">Réservation</a></li>
+          <li><a class="" href="index.html"><img class="logoFestival" src="ressources/LogoLesFilmsEnPleinAir_small.png" alt="Logo Festival"></a></li>
+          <li><a class="active" href="infosPratiques.html">Infos pratiques</a></li>
+          <li><a class="" href="actualites.html">Actualités</a></li>
+          <li><a class="" href="contact.html">Contact</a></li> 
+      </ul>
+    </nav>
+
+
+<!--------------------------------------------------------
+	Section MENU DE TELEPHONE
+---------------------------------------------------------->
+    <div class="logoTel">
+        <a class="" href="index.html"><img class="logoTelFestival" src="ressources/LogoLesFilmsEnPleinAir_small.png" alt="Logo Festival"></a>
+    </div>
+
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Accueil</a>
+      <a href="programmation.html">Programmation</a>
+      <a href="reservation.html">Réservation</a>
+      <a href="infosPratiques.html">Infos Pratiques</a>
+      <a href="actualites.html">Actualités</a>
+      <a href="contact.html">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="navTel()">
+      <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+
+
+
+<!--------------------------------------------------------
+	Section HERO LIGHT
+---------------------------------------------------------->          
+         
+    <header>
+      <div class="heroPratiques">  
+      </div> 
+    </header>
+
+
+<!--------------------------------------------------------
+	Section PROGRAMME HORAIRE & RESTAURATION
+---------------------------------------------------------->   
+    <div class="infosPratiquesHaut">  
+        <section class="programme">
+            <h2>Le Programme Horaire</h2>
+            <div class="jour">
+                <h3>Jour 1 - 5 Août 2021</h3>
+                <div class="heureLieu">
+                    <p><img class="clock" src="ressources/clock.png" alt="Icône Horloge">18h à Minuit<img class="pin" src="ressources/pin.png" alt="Icône Situation">Parc Monceau</p>
+                </div>
+                <p>18h00 - Ouverture</p>
+                <p>18h30 - Projection "Enter The Void"</p>
+                <p>21h15 - Entracte Restauration et animations</p>
+                <p>22h00 - Projection "Dead Man"</p>
+            </div>
+
+            <div class="jour">
+                <h3>Jour 2 - 6 Août 2021</h3>
+                <div class="heureLieu">
+                    <p><img class="clock" src="ressources/clock.png" alt="Icône Horloge">18h à Minuit<img class="pin" src="ressources/pin.png" alt="Icône Situation">Parc Monceau</p>
+                </div>
+                <p>18h00 - Ouverture</p>
+                <p>18h30 - Projection "Holy Motors"</p>
+                <p>20h30 - Entracte Restauration et animations</p>
+                <p>21h30 - Projection "Vol au dessus d'un nid de coucou"</p>
+            </div>
+
+            <div class="jour">
+                <h3>Jour 3 - 7 Août 2021</h3>
+                <div class="heureLieu">
+                    <p><img class="clock" src="ressources/clock.png" alt="Icône Horloge">18h à Minuit<img class="pin" src="ressources/pin.png" alt="Icône Situation">Parc Monceau</p>
+                </div>
+                <p>18h00 - Ouverture</p>
+                <p>18h30 - Projection "Melancholia"</p>
+                <p>20h45 - Entracte Restauration et animations</p>
+                <p>21h45 - Projection "Vol au dessus d'un nid de coucou"</p>
+            </div>
+
+            <div class="jour">
+                <h3>Jour 4 - 8 Août 2021</h3>
+                <div class="heureLieu">
+                    <p><img class="clock" src="ressources/clock.png" alt="Icône Horloge">18h à Minuit<img class="pin" src="ressources/pin.png" alt="Icône Situation">Parc Monceau</p>
+                </div>
+                <p>18h00 - Ouverture</p>
+                <p>18h30 - Projection "Le guerrier silencieux"</p>
+                <p>20h15 - Entracte Restauration et animations</p>
+                <p>21h15 - Projection "Enemy"</p>
+            </div>
+        </section>
+
+        <section class="restauration">
+            <h2>La Restauration</h2>
+            <p class="introRest">La restauration sera assurée par des Food-Trucks locaux. Des tables et des chaises seront à votre disposition pour votre confort.</p>
+
+            <div class="foodTruck">
+                <h3>La Fée Tartine</h3>
+                    <div class="menu">
+                        <p><img class="iconeMenu" src="ressources/wedding.png" alt="Icône menu">Menu - Plat : (8 €)</p>
+                    </div>
+                        <p class="plat">Tartine Savoyarde (Tartine de pain, reblochon, pomme de terre, lardons)</p>
+                        <p class="plat">Tartine Vegan (Tartine de pain, aubergine, poivron, oignons, tofu fondu)</p>
+                        <p class="plat">Tartine Basquaise (Tartine de pain, Poulet, sauce basquaise, emmental fondu)</p>
+                        <p class="plat">Tartine Aubrac (Tartine de pain, Viande de boeuf hachée de l'aubrac, oignons, emmental fondu)</p>
+                        <p class="plat">Toutes les tartines sont servis avec des légumes grillés ou frites.</p>
+            </div>
+
+            <div class="foodTruck">
+                <h3>Frenchie Burger</h3>
+                    <div class="menu">
+                        <p><img class="iconeMenu" src="ressources/wedding.png" alt="Icône menu">Menu - Plat : (10 €)</p>
+                    </div>
+                    <p class="plat">Crispy Burger (Steak frais, filet de poulet, oignons crispy, fromage fondu, tomates, poivrons frits, aubergines à la plancha, sauce maison)</p>
+                    <p class="plat">BBQ Burger (Steak frais, oignon rings, jalapenos, tomates, œuf, fromage, pommes de terre, salade, sauce BBQ)</p>
+                    <p class="plat">Country Burger (Steak frais, cheddar fondu, salade, tomates, cornichons, fromage, pommes de terre, salade, sauce BBQ)</p>
+                    <p class="plat">Tous les burgers sont servis avec des légumes grillés ou frites.</p>
+            </div>
+
+            <div class="foodTruck">
+                <h3>Thai Trip</h3>
+                    <div class="menu">
+                        <p><img class="iconeMenu" src="ressources/wedding.png" alt="Icône menu">Menu - Plat : (10 €)</p>
+                    </div>
+                    <p class="plat">Crevettes Sautées à la Sauce Thaï</p>
+                    <p class="plat">Poulet Sauté Épicé à la Sichaunnais</p>
+                    <p class="plat">Soupe Udon au Boeuf Grillé</p>
+                    <p class="plat">Poulet Croustillant du Chef</p>
+                    <p class="plat">Tous les plats sont servis avec des nouilles ou du riz.</p>
+            </div>
+        </section>
+    </div>
+
+<!--------------------------------------------------------
+	Section ANIMATIONS et DIVERS INFOS
+---------------------------------------------------------->   
+    <div class="infosPratiquesBas">  
+        <section class="programme">
+            <h2>Les Animations</h2>
+            <div class="jour">
+                <h3>Jazz Band Trio</h3>
+                <div class="heureLieu">
+                    <p><img class="music" src="ressources/music.png" alt="Icône Musique">Groupe, Jazz, Swing<img class="date" src="ressources/calendar.png" alt="Icône Calendrier">5 août 2021<img class="clock" src="ressources/clock.png" alt="Icône Horloge">21h30 à 22h</p>
+                </div>
+                <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, ipsum dolor pariatur veniam quisquam facilis provident voluptate. Cupiditate quia quibusdam iste molestias voluptates. Velit quasi veniam nihil quaerat placeat tempora!</p>
+               
+            </div>
+
+            <div class="jour">
+                <h3>Les Frères Jongleurs</h3>
+                <div class="heureLieu">
+                    <p><img class="jongle" src="ressources/juggler.png" alt="Icône Jongleur">Spectacle, jongleurs, acrobaties<img class="date" src="ressources/calendar.png" alt="Icône Calendrier">6 août 2021<img class="clock" src="ressources/clock.png" alt="Icône Horloge">21h à 21h30</p>
+                </div>
+                <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, ipsum dolor pariatur veniam quisquam facilis provident voluptate. Cupiditate quia quibusdam iste molestias voluptates. Velit quasi veniam nihil quaerat placeat tempora!</p>
+            </div>
+
+            <div class="jour">
+                <h3>Magic Mike</h3>
+                <div class="heureLieu">
+                    <p><img class="magie" src="ressources/spark.png" alt="Icône Magie">Spectacle, magie<img class="date" src="ressources/calendar.png" alt="Icône Calendrier">7 août 2021<img class="clock" src="ressources/clock.png" alt="Icône Horloge">21h15 à 21h45</p>
+                </div>
+                <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, ipsum dolor pariatur veniam quisquam facilis provident voluptate. Cupiditate quia quibusdam iste molestias voluptates. Velit quasi veniam nihil quaerat placeat tempora!</p>
+            </div>
+
+            <div class="jour">
+                <h3>Les Vieilles Branches</h3>
+                <div class="heureLieu">
+                    <p><img class="music" src="ressources/music.png" alt="Icône Musique">Groupe, reprises<img class="date" src="ressources/calendar.png" alt="Icône Calendrier">8 août 2021<img class="clock" src="ressources/clock.png" alt="Icône Horloge">20h45 à 21h15</p>
+                </div>
+                <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, ipsum dolor pariatur veniam quisquam facilis provident voluptate. Cupiditate quia quibusdam iste molestias voluptates. Velit quasi veniam nihil quaerat placeat tempora!</p>
+            </div>
+        </section>
+
+        <section class="restauration">
+            <h2>Infos Divers</h2>
+
+            <div class="foodTruck">
+                <h3>Comment Venir ?</h3>
+                    <div class="menu">
+                        <p><img class="transport" src="ressources/route.png" alt="Icône Transport">Transport</p>
+                    </div>
+                    <p class="plat">Métro : Ligne X - Arrêt XXXXXXX</p>
+                    <p class="plat">Bus : Ligne X - Arrêt XXXXXXX</p>
+                    <p class="plat">Voiture : Parc Monceau - Paris</p>
+                    <p class="plat">Parking : Parking du théatre (payant)</p>
+                    <p class="maps">
+                        <iframe class="gMaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.873738203498!2d2.306766316035137!3d48.87968347928959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc%20Monceau!5e0!3m2!1sfr!2sfr!4v1595246354093!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe> 
+                    </p>
+    
+            </div>
+
+            <div class="foodTruck">
+                <h3>Côté Pratique</h3>
+                    <div class="menu">
+                        <p><img class="stand" src="ressources/booth.png" alt="Icône stand">Stands</p>
+                    </div>
+                    <p class="plat">10 toilettes à votre disposition. (0,50€)</p>
+                    <p class="plat">1 stand de la Croix rouge pour les petits bobos</p>
+                    <p class="plat">1 stand de l'association "les Films de Plein Air" pour se rencontrer</p>
+                    <p class="plat">1 stand garderie pour ceux qui veulent profiter tranquilement de la soirée (20€)</p>
+                    <p class="plat">1 stand PhotBooth pour se faire des souvenirs (5€)</p>
+            </div>
+
+ 
+
+        </section>
+    </div>     
+
+<!--------------------------------------------------------
+	Section FOOTER
+----------------------------------------------------------> 
+<hr/>
+    <section class="footer"> 
+        <div class="texteFooter">
+            <div class="navFooter">
+                <h4>Navigation :</h4>
+                <p><a class="styletext" href="#accueil">Accueil</a></p>
+                <p><a class="styletext" href="programmation.html">Programmation</a></p>
+                <p><a class="styletext" href="reservation.html">Réservation</a></p>
+                <p><a class="styletext" href="infosPratiques.html">Infos Pratiques</a></p>
+                <p><a class="styletext" href="actualites.html">Actualités</a></p>
+                <p><a class="styletext" href="contact.html">Contact</a></p>
+            </div>
+            <div class="contact">  
+                <h4>Nous contacter :</h4>
+                <p class ="tel">Association "Les films de plein air"</p>
+                <p class ="tel">17 rue de la Cadoule</p> 
+                <p class ="tel marge">75011 Paris</p>     
+            
+                <p class ="tel">  
+                    <span>&#048&#054 &#048&#054 &#048&#054 &#048&#054 &#048&#054</span>
+                </p>
+                <br/>
+                <p class ="tel"> 
+                    <a class="styletext" href="mailto:contact@lfdpa.org" title="Cliquer ici pour m'envoyer un mail!">contact@lfdpa.org</a>
+                </p>
+                <p class ="tel">
+                    <img class="fb" src="ressources/facebook.png" alt="Icone Facebook">
+                    <img class="tw" src="ressources/twitter.png" alt="Icone Tweeter">
+                    <img class="inst" src="ressources/instagram.png" alt="Icone Instagram">
+                    <img class="yt" src="ressources/youtube.png" alt="Icone Youtube">
+                </p>
+            </div>
+            <div class="credits">
+                <h4>Crédits :</h4>
+                <p>Photos : <a class="styletext" href="http://photographe.com" target="_blank">Nom Prénom</a></p>
+                <p>Hébergement : WebRB</p>
+                <p>Réalisation : <a class="styletext" href="mailto:raphael.bertrand@lilo.org" title="Cliquer pour envoyer un email a raphael.bertrand@lilo.org">Raphaël BERTRAND</a></p>
+            </div>
+        </div>    
+    </section>
+
+
+    <script src="js/infosPratiques.js"></script>
+
+  </body>
+</html>

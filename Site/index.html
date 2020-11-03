@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<!-- Lien vers le CSS -->
+        <link rel="stylesheet" href="css/acceuil.css">
+<!-- Lien vers le CSS du logo menu de téléphone -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Faveicon -->
+        <link rel="shortcut icon" href="ressources/faveicon.ico" type="image/x-icon" /> 
+<!-- Lien vers google font -->        
+        <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600&display=swap" rel="stylesheet"> 
+<!-- Titre -->
+        <title>Les Films de plein air</title>
+<!-- Acces à la bibliothèque ScrollReveal -->      
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </head>
+
+    <body>
+<!--------------------------------------------------------
+	Section MENU DE NAVIGATION
+---------------------------------------------------------->
+        <nav id="accueil">
+            <ul> 
+                <li><a class="active" href="index.html">Accueil</a></li>
+                <li><a class="" href="programmation.html">Programmation</a></li>
+                <li><a class="" href="reservation.html">Réservation</a></li>
+                <li><a class="" href="index.html"><img class="logoFestival" src="ressources/LogoLesFilmsEnPleinAir_small.png" alt="Logo Festival"></a></li>
+                <li><a class="" href="infosPratiques.html">Infos pratiques</a></li>
+                <li><a class="" href="actualites.html">Actualités</a></li>
+                <li><a class="" href="contact.html">Contact</a></li> 
+            </ul>
+        </nav>
+
+
+<!--------------------------------------------------------
+	Section MENU DE TELEPHONE
+---------------------------------------------------------->
+        <div class="logoTel">
+            <a class="" href="index.html"><img class="logoTelFestival" src="ressources/LogoLesFilmsEnPleinAir_small.png" alt="Logo Festival"></a>
+        </div>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Accueil</a>
+            <a href="programmation.html">Programmation</a>
+            <a href="reservation.html">Réservation</a>
+            <a href="infosPratiques.html">Infos Pratiques</a>
+            <a href="actualites.html">Actualités</a>
+            <a href="contact.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="navTel()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+
+<!--------------------------------------------------------
+	Section HERO
+---------------------------------------------------------->          
+         
+        <header>
+            <div class="hero">
+                <p class="texteHero1">FESTIVAL DU FILM D'AUTEUR</p>
+                <p class="texteHero2">LES FILMS DE PLEIN AIR</p>   
+            </div> 
+        </header>
+
+          
+
+<!--------------------------------------------------------
+	Section DATE ET LIEU
+---------------------------------------------------------->
+        <section class="dateLieu">
+            <div class="date">
+                <p class="textDate1">1er édition</p>
+                <p class="textDate2">Du 5 au 8 Août 2021</p>
+            </div>
+            <div class="affiche">
+                <p>
+                    <img class="logoFestival2" src="ressources/LogoLesFilmsEnPleinAir_small.png" alt="Logo Festival">
+                </p>
+            </div>
+            <div class="lieu">
+                <p class="textDate1">Au Parc</p>
+                <p class="textDate1">MONCEAU</p>
+                <p class="textDate2">Paris</p>
+            </div>
+        </section>
+
+
+
+
+<!--------------------------------------------------------
+	Section MISE EN AVANT FILM
+---------------------------------------------------------->
+        <h2>FILMS à LA UNE</h2>
+
+<!-- 1er ligne de film -->
+        <section class="miseEnAvant">
+            <div class="filmHautGauche">
+                <div class="film">
+                    <p class="jaquette">
+                        <img class="film1" src="ressources/film1.jpg" alt="Photo Enter the void">
+                    </p>
+                </div>
+                <div class="textFilm">
+                    <p class="titreFilm">Enter the void</p>
+                    <p class="infosFilm">2 h 41 min. Sortie : 5 mai 2010. Drame et fantastique. </p>
+                    <p class="distriFilm">Film de Gaspar Noé avec Paz de la Huerta, Nathaniel Brown, Cyril Roy </p>
+                </div>
+                <div class="link">
+                    <p class="btn"><a class="lienFilm" href="programmation.html#enter">Lire plus</a></p>
+                    <p class="ticket"><a href="reservation.html"><img class="reserTicket" src="ressources/ticket3.png" alt="Icone Ticket" title="Réservez votre ticket"></a></p>
+                </div>
+            </div>
+
+            <div class="filmHautCentre">
+                <div class="film">
+                    <p class="jaquette">
+                        <img class="film2" src="ressources/film2.jpg" alt="Photo Dead Man">
+                    </p>
+                </div>
+                <div class="textFilm">
+                    <p class="titreFilm">Dead Man</p>
+                    <p class="infosFilm"> 2 h 01 min. Sortie : 23 décembre 1995. Aventure, drame, fantastique, western et road movie.  </p>
+                    <p class="distriFilm">Film de Jim Jarmusch avec Johnny Depp, Gary Farmer, Crispin Glover  </p>
+                </div>
+                <div class="link">
+                    <p class="btn"><a class="lienFilm" href="programmation.html#dead">Lire plus</a></p>
+                    <p class="ticket"><a href="reservation.html"><img class="reserTicket" src="ressources/ticket3.png" alt="Icone Ticket" title="Réservez votre ticket"></a></p>
+                </div>
+            </div>
+
+            <div class="filmHautDroite">
+                <div class="film">
+                    <p class="jaquette">
+                        <img class="film3" src="ressources/film3.jpg" alt="Photo Holy Motors">
+                    </p>
+                </div>
+                <div class="textFilm">
+                    <p class="titreFilm">Holy Motors</p>
+                    <p class="infosFilm">1 h 55 min. Sortie : 4 juillet 2012. Drame et fantastique.</p>
+                    <p class="distriFilm">Film de Leos Carax avec Denis Lavant, Edith Scob, Eva Mendes</p>
+                </div>
+                <div class="link">
+                    <p class="btn"><a class="lienFilm" href="programmation.html#holy">Lire plus</a></p>
+                    <p class="ticket"><a href="reservation.html"><img class="reserTicket" src="ressources/ticket3.png" alt="Icone Ticket" title="Réservez votre ticket"></a></p>
+                </div>
+            </div>
+
+
+<!-- 2éme ligne de film -->
+
+            <div class="filmBasGauche">
+                <div class="film">
+                    <p class="jaquette">
+                        <img class="film4" src="ressources/film4.jpg" alt="Photo Vol au dessus d'un nid de coucou">
+                    </p>
+                </div>
+                <div class="textFilm">
+                    <p class="titreFilm">Vol au dessus d'un nid de coucou</p>
+                    <p class="infosFilm">2 h 13 min. Sortie : 21 novembre 1975. Drame.</p>
+                    <p class="distriFilm">Film de Miloš Forman avec Jack Nicholson, Louise Fletcher, Will Sampson</p>
+                </div>
+                <div class="link">
+                    <p class="btn"><a class="lienFilm" href="programmation.html#vol">Lire plus</a></p>
+                    <p class="ticket"><a href="reservation.html"><img class="reserTicket" src="ressources/ticket3.png" alt="Icone Ticket" title="Réservez votre ticket"></a></p>
+                </div>
+            </div>
+
+            <div class="filmBasCentre">
+                <div class="film">
+                    <p class="jaquette">
+                        <img class="film5" src="ressources/film5.jpg" alt="Photo Melancholia">
+                    </p>
+                </div>
+                <div class="textFilm">
+                    <p class="titreFilm">Melancholia</p>
+                    <p class="infosFilm">2 h 10 min. Sortie : 26 mai 2011. Drame et science-fiction.</p>
+                    <p class="distriFilm">Film de Lars von Trier avec Kirsten Dunst, Charlotte Gainsbourg, Kiefer Sutherland </p>
+                </div>
+                <div class="link">
+                    <p class="btn"><a class="lienFilm" href="programmation.html#mel">Lire plus</a></p>
+                    <p class="ticket"><a href="reservation.html"><img class="reserTicket" src="ressources/ticket3.png" alt="Icone Ticket" title="Réservez votre ticket"></a></p>
+                </div>
+            </div>
+
+            <div class="filmBasDroite">
+                <div class="film">
+                    <p class="jaquette">
+                        <img class="film6" src="ressources/film6.jpg" alt="Photo Eraserhead">
+                    </p>
+                </div>
+                <div class="textFilm">
+                    <p class="titreFilm">Eraserhead</p>
+                    <p class="infosFilm">1 h 29 min. Sortie : 28 septembre 1977. Expérimental, Épouvante-horreur et fantastique.</p>
+                    <p class="distriFilm">Film de David Lynch avec Jack Nance, Charlotte Stewart, Allen Joseph</p>
+                </div>
+                <div class="link">
+                    <p class="btn"><a class="lienFilm" href="programmation.html#era">Lire plus</a></p>
+                    <p class="ticket"><a href="reservation.html"><img class="reserTicket" src="ressources/ticket3.png" alt="Icone Ticket" title="Réservez votre ticket"></a></p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+<!--------------------------------------------------------
+	Section ACCROCHE PROGRAMMATION
+---------------------------------------------------------->
+        <section class="accroche">
+            <div class="photoFond">
+                <h2 class="texteTitre">PROGRAMMATION DU FESTIVAL</h2>
+                <p class="texteAccroche">Longs ou courts métrages, films d’auteur pour le grand public, science fiction ou drame : la programmation du Festival Les films de plein air vous en offre de toutes les couleurs et pour tous les goûts! <br>Avec 2 séances GRATUITES par soirées et des surprises... </p>
+                <p><a class="btnAccroche" href="programmation.html">VOIR LA PROGRAMMATION</a></p>
+            </div>
+        </section>
+
+    
+<!--------------------------------------------------------
+	Section ACTUALITES
+---------------------------------------------------------->
+        <h2>les dernières actualités du festival</h2>
+        <section class="actualites">
+            <div class="actu">
+                <div class="textActu">
+                    <p class="dateActu">Ajouté le 01/02/2020</p>
+                    <p class="titreActu">Découvrez le FoodTruck "La Fée Tartine"</p>
+                    <p class="synoActu">Pour se restaurer pendant le festival, la Fée Tartine vous proposera ses fameuses tartines.</p>
+                </div>
+                <a class="lienActuSuite" href="feeTartine.html">Lire la suite</a>
+                <div class="visuel">
+                    <p class="photo">
+                        <a class="" href="feeTartine.html"><img class="actu1" src="ressources/tartine.jpeg" alt="Visuel de la fée tartine"></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="actu">
+                <div class="textActu">
+                    <p class="dateActu">Ajouté le 01/02/2020</p>
+                    <p class="titreActu">La programmation est en ligne</p>
+                    <p class="synoActu">Retrouvez dans la section programmation les pepites cinématographique de ce premier festival.</p>
+                </div>
+                <div class="visuel">
+                    <p class="photo">
+                        <img class="actu1" src="ressources/actu1.jpg" alt="Visuel de l'actualité 1">
+                    </p>
+                </div>
+            </div>
+
+            <div class="actu">
+                <div class="textActu">
+                    <p class="dateActu">Ajouté le 01/02/2020</p>
+                    <p class="titreActu">La programmation est en ligne</p>
+                    <p class="synoActu">Retrouvez dans la section programmation les pepites cinématographique de ce premier festival.</p>
+                </div>
+                <div class="visuel">
+                    <p class="photo">
+                        <img class="actu1" src="ressources/actu1.jpg" alt="Visuel de l'actualité 1">
+                    </p>
+                </div>
+            </div>   
+            
+            
+
+            <div class="actu">
+                <div class="textActu">
+                    <p class="dateActu">Ajouté le 01/02/2020</p>
+                    <p class="titreActu">La programmation est en ligne</p>
+                    <p class="synoActu">Retrouvez dans la section programmation les pepites cinématographique de ce premier festival.</p>
+                </div>
+                <div class="visuel">
+                    <p class="photo">
+                        <img class="actu1" src="ressources/actu1.jpg" alt="Visuel de l'actualité 1">
+                    </p>
+                </div>
+            </div>
+
+            <div class="actu">
+                <div class="textActu">
+                    <p class="dateActu">Ajouté le 01/02/2020</p>
+                    <p class="titreActu">La programmation est en ligne</p>
+                    <p class="synoActu">Retrouvez dans la section programmation les pepites cinématographique de ce premier festival.</p>
+                </div>
+                <div class="visuel">
+                    <p class="photo">
+                        <img class="actu1" src="ressources/actu1.jpg" alt="Visuel de l'actualité 1">
+                    </p>
+                </div>
+            </div>
+
+            <div class="actu">
+                <div class="textActu">
+                    <p class="dateActu">Ajouté le 01/02/2020</p>
+                    <p class="titreActu">La programmation est en ligne</p>
+                    <p class="synoActu">Retrouvez dans la section programmation les pepites cinématographique de ce premier festival.</p>
+                </div>
+                <div class="visuel">
+                    <p class="photo">
+                        <img class="actu1" src="ressources/actu1.jpg" alt="Visuel de l'actualité 1">
+                    </p>
+                </div>
+            </div> 
+        </section>
+        <p class="btnActu"><a class="lienActu" href="actualites.html">voir plus d'actualités</a></p>
+
+
+<!--------------------------------------------------------
+	Section QUI SOMMES NOUS ?
+---------------------------------------------------------->            
+       
+        <section class="sectionQui">
+            <div class="texteQui">
+                <div class="titreQui">
+                    <h2 class="quiSommesNous">QUI SOMMES NOUS</h2><p class="pointInt">?</p>
+                </div>
+                <h3>L'association "Les films de plein air"</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente illo expedita omnis aliquid reiciendis molestiae ipsam commodi suscipit vel officia assumenda ab dignissimos iure nemo ut facere qui, aperiam veniam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime minima harum perspiciatis tenetur pariatur sed quaerat magni dignissimos laborum, illo itaque sit, corporis ipsam soluta modi quam explicabo deserunt incidunt?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime minima harum perspiciatis tenetur pariatur sed quaerat magni dignissimos laborum, illo itaque sit, corporis ipsam soluta modi quam explicabo deserunt incidunt?</p>
+            </div>
+            <div class="sideQui">
+                <p>
+                    <img class="photoQui" src="ressources/quiSommesNous.jpg" alt="Photo Association">
+                </p>
+            </div>
+        </section>
+
+
+<!--------------------------------------------------------
+	Section FOOTER
+----------------------------------------------------------> 
+<hr/>
+        <section class="footer"> 
+            <div class="texteFooter">
+                <div class="navFooter">
+                    <h4>Navigation :</h4>
+                    <p><a class="styletext" href="#accueil">Accueil</a></p>
+                    <p><a class="styletext" href="programmation.html">Programmation</a></p>
+                    <p><a class="styletext" href="reservation.html">Réservation</a></p>
+                    <p><a class="styletext" href="infosPratiques.html">Infos Pratiques</a></p>
+                    <p><a class="styletext" href="actualites.html">Actualités</a></p>
+                    <p><a class="styletext" href="contact.html">Contact</a></p>
+                </div>
+                <div class="contact">  
+                    <h4>Nous contacter :</h4>
+                    <p class ="tel">Association "Les films de plein air"</p>
+                    <p class ="tel">17 rue de la Cadoule</p> 
+                    <p class ="tel marge">75011 Paris</p>     
+                
+                    <p class ="tel">  
+                        <span>&#048&#054 &#048&#054 &#048&#054 &#048&#054 &#048&#054</span>
+                    </p>
+                    <br/>
+                    <p class ="tel"> 
+                        <a class="styletext" href="mailto:contact@lfdpa.org" title="Cliquer ici pour m'envoyer un mail!">contact@lfdpa.org</a>
+                    </p>
+                    <p class ="tel">
+                        <img class="fb" src="ressources/facebook.png" alt="Icone Facebook">
+                        <img class="tw" src="ressources/twitter.png" alt="Icone Tweeter">
+                        <img class="inst" src="ressources/instagram.png" alt="Icone Instagram">
+                        <img class="yt" src="ressources/youtube.png" alt="Icone Youtube">
+                    </p>
+                </div>
+                <div class="credits">
+                    <h4>Crédits :</h4>
+                    <p>Photos : <a class="styletext" href="http://photographe.com" target="_blank">Nom Prénom</a></p>
+                    <p>Hébergement : WebRB</p>
+                    <p>Réalisation : <a class="styletext" href="mailto:raphael.bertrand@lilo.org" title="Cliquer pour envoyer un email a raphael.bertrand@lilo.org">Raphaël BERTRAND</a></p>
+                </div>
+            </div>   
+        </section>
+
+
+
+        <script src="js/acceuil.js"></script>
+<!-- Acces à la derniere version de SrollReveal  -->     
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+
+    </body>
+</html>
